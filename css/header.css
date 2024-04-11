@@ -1,0 +1,234 @@
+header {
+  background-image: url(../image/headerBg.jpg);
+  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 1.5rem 1rem;
+}
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+}
+menu {
+  background-color: var(--dark2);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.2rem;
+  backdrop-filter: blur(2px);
+}
+.menu-icon {
+  font-size: 2rem;
+  color: var(--light2);
+  display: none;
+}
+.menu-right,
+.menu-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-brand1,
+.menu-brand2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-brand1 {
+  margin: 0 0 0 1rem;
+}
+.menu-brand2 {
+  margin: 0 1rem 0 0;
+  display: none;
+}
+.menu-brand__icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-top: 0.2rem;
+}
+.menu-brand__text {
+  font-size: 2rem;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+}
+.menu-item__link {
+  color: var(--light2);
+  margin: 0 0.8rem;
+  font-size: 0.9rem;
+  transition: 0.4s;
+  font-weight: 500;
+}
+.menu-item__link:hover {
+  color: var(--primary);
+}
+
+.menu-productBox,
+.menu-productLike {
+  color: var(--light2);
+  font-size: 1.2rem;
+  margin: 0 0.5rem 0 0;
+  cursor: pointer;
+  background-color: var(--light3);
+  padding: 0.6rem;
+  border-radius: .3rem;
+  transition: 0.3s;
+}
+.menu-productBox:hover,
+.menu-productLike:hover {
+  color: var(--primary);
+}
+
+.menu-searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 15rem;
+  height: 2.4rem;
+  border-radius: .3rem;
+  overflow: hidden;
+}
+.menu-searchbar__icon {
+  position: absolute;
+  left: 1rem;
+  z-index: 9;
+  color: var(--light2);
+  cursor: pointer;
+}
+.menu-searchbar__input {
+  background-color: var(--light3);
+  color: var(--light1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  padding: 0 1rem;
+}
+
+.main-header {
+  text-align: right;
+  margin-top: 8rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-header__title {
+  color: var(--light1);
+  font-size: 3rem;
+}
+
+.main-header__title span {
+  color: var(--primary);
+}
+
+.main-header__subtitle {
+  color: var(--light2);
+  margin-top: 2rem;
+  font-size: 1rem;
+  width: 30rem;
+}
+.main-header__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listMenu-btn,
+.shoping-btn {
+  width: 8.5rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 10rem;
+  background-color: var(--primaryLight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 0 0.5rem;
+  color: var(--light1);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.shoping-btn {
+  background-color: var(--light2);
+  color: var(--dark1);
+}
+.shoping-btn:hover {
+  background-color: var(--primaryLight);
+  color: var(--dark1);
+}
+.listMenu-btn:hover {
+  background-color: var(--light2);
+  color: var(--dark1);
+}
+.main-header__btns p {
+  font-size: 0.9rem;
+  margin: 0 0.7rem;
+}
+
+.main-header__btns i {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1000px) {
+  menu {
+    direction: ltr;
+  }
+  .main-header__title {
+    font-size: 2.5rem;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .menu-list {
+    display: none;
+  }
+  .menu-productBox {
+    display: none;
+  }
+  .menu-productLike {
+    display: none;
+  }
+  .menu-brand1 {
+    display: none;
+  }
+  .menu-brand2 {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 1rem;
+  }
+  .header-container {
+    width: 100%;
+  }
+  .main-header__title {
+    font-size: 2rem;
+  }
+  .main-header__subtitle {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .main-header {
+    align-items: center;
+    text-align: center;
+  }
+  .menu-searchbar {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-header__title {
+    font-size: 1.8rem;
+  }
+}

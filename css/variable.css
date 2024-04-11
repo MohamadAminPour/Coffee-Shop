@@ -1,0 +1,11 @@
+:root {
+  /* color-scheme: dark; */
+  --primary: #ffb951;
+  --primaryLight: #ffb95188;
+  --light1:white;
+  --light2:rgba(255, 255, 255, 0.66);
+  --light3:rgba(255, 255, 255, 0.222);
+  --dark1:rgb(0, 0, 0);
+  --dark2:rgba(0, 0, 0, 0.50);
+  --dark3:rgba(0, 0, 0, 0.222);
+}
